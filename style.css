@@ -24,6 +24,7 @@
   align-items: center;
 }
 .popup {
+  /*display: flex;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -604,7 +605,8 @@
 }
 
 .post-sidebar-information {
-  display: flex;
+  /*display: flex;*/
+  padding: bottom 11px;
 }
 
 .post-sidebar-date {
@@ -660,6 +662,8 @@
   color: #a2a4a3;
   border: none;
   background-color: #f4f7f6;
+  width: calc(100% - 48px);
+  height: 48px;
 }
 
 .search-input:focus {
@@ -699,7 +703,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  width: 272px;
+  width: 100%;
   height: 48px;
   border: none;
   padding-left: 18px;
@@ -715,7 +719,7 @@
 
 .form-button {
   margin-top: 33px;
-  width: 272px;
+  width: 100%;
   height: 48px;
   border: none;
   background-color: #b59f5b;
@@ -762,6 +766,7 @@
 }
 
 .tag-link {
+  display: block;
   text-decoration: none;
   padding: 2px 13px;
   font-family: "OpenSans-Bold", sans-serif;
@@ -849,6 +854,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 27px;
+  margin-bottom: 48px;
 }
 
 .product-section {
@@ -926,6 +932,9 @@
 
   background-color: #b59f5b;
 }
+.shop-product:hover {
+  border-top: 2px solid #b59f5b;
+}
 
 .shop-link {
   font-family: "OpenSans-Regular", sans-serif;
@@ -934,6 +943,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
 
 
 /*======FOOTER======*/
@@ -1074,7 +1084,7 @@
   }
   
   .posts {
-    max-width: 391px;
+    /*max-width: 391px;*/
     margin-left: 35px;
     margin-right: 33px;
   }
@@ -1102,7 +1112,7 @@
   }
   
   .post-content {
-    width: 394px;
+    /*width: 394px;*/
     padding-left: 0;
   }
   
@@ -1127,12 +1137,12 @@
   }
 
   .title-sidebar {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 46px;
   }
   
   .sidebar-foto {
-    margin-right: 21px;
+    /*margin-right: 21px;*/
   }
   
   .shop {
@@ -1236,18 +1246,18 @@
   
   .content {
     flex-direction: column;
-    max-width: 330px;
+    /*max-width: 330px;*/
     margin-top: 44px;
     padding: 0 17px;
   }
   
   .posts {
-    max-width: 330px;
+    /*max-width: 330px;*/
     margin-right: 0;
     margin-bottom: 35px;
   }
   
-.post {
+  .post {
     flex-direction: column;
     border-bottom: 3px solid #eeeeee;
     padding-bottom: 22px;
@@ -1290,7 +1300,7 @@
     max-width: 460px;
   }
   
-  title-sidebar {
+  .title-sidebar {
     margin-bottom: 28px;
     font-size: 16px;
   }
@@ -1304,7 +1314,7 @@
   }
   
    .shop {
-    max-width: 330px;
+    /*max-width: 330px;*/
     margin-bottom: 50px;
   }
   
